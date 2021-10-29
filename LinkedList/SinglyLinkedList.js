@@ -70,5 +70,13 @@ class SinglyLinkedList {
     }
     return current;
   }
+  set(val, i) {
+    let index = this.get(i);
+    if (index) {
+      index.val = val;
+      return true;
+    }
+    return false;
+  }
 }
 var list = new SinglyLinkedList();
