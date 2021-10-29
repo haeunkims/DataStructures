@@ -60,5 +60,15 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+  get(i) {
+    if (i < 0 || i >= this.length) return null;
+    let count = 0;
+    let current = this.head;
+    while (count !== index) {
+      current = current.next;
+      counter++;
+    }
+    return current;
+  }
 }
 var list = new SinglyLinkedList();
